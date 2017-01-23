@@ -13,5 +13,5 @@ using namespace std;
 
 void Controller :: start()
 {
-    cout << "NOPE" << endl;
+    cout << "HELLOOOO HENDRICHSEN" << endl;
 }
