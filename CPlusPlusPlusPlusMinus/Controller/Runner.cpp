@@ -1,15 +1,17 @@
 //
-//  main.cpp
+//  Runner.cpp
 //  CPlusPlusPlusPlusMinus
 //
 //  Created by Bowen, Isaac on 1/23/17.
 //  Copyright © 2017 Bowen, Isaac. All rights reserved.
 //
 
-#include <iostream>
+#include "Controller.cpp"
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+int main ()
+{
+    Controller * app = new Controller();
+    app->start();
+    
     return 0;
 }
