@@ -6,7 +6,7 @@
 //  Copyright © 2017 Bowen, Isaac. All rights reserved.
 //
 
-#include "Controller.cpp"
+#include "Controller.h"
 
 int main ()
 {

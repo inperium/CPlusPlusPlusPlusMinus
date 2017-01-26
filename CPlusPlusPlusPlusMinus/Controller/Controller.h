@@ -13,5 +13,7 @@ class Controller
 {
 public:
     void start();
+private:
+    void specialOutput();
 };
 #endif /* Controller_h */
