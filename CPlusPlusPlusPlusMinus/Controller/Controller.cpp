@@ -13,29 +13,35 @@ using namespace std;
 
 void Controller :: start()
 {
-    cout << "HELLOOOO HENDRICHSEN" << endl;
-    this->specialOutput();
-    int age;
-    cin >> age;
-    cout << "you typed in " << age << endl;
-    cout << "What is your name?" << endl;
-    string name;
-    cin >> name;
-    cout << "You should change your name " << name << "." << endl;
-    cin.ignore();
-    cin >> name;
-    cout << name;
-    cout << "Type your name and age" << endl;
-    cin >> name >> age;
-    cout << name << age << endl;
-    cout << "" << endl;
-    cout << "Type in your full name" << endl;
-    cin.ignore();
-    getline(cin, name);
-    cout << name << endl;
+    int suppliedNumber = 9;
+    int * numberPointer = &suppliedNumber;
+    
+    cout << suppliedNumber <<endl;
+    specialOutput(suppliedNumber);
+    cout << suppliedNumber << endl;
+    
+    cout << "Changing a Value" << endl;
+    suppliedNumber = impactNumber();
+    cout << suppliedNumber << endl;
+    
+    cout << "Changing with a pointer." << endl;
+    usePointerToChange(numberPointer);
+    cout<< "see how the number has been changed: " << suppliedNumber << endl;
 }
 
-void Controller :: specialOutput()
+void Controller :: specialOutput(int suppliedNumber)
 {
-    cout << "What is your age?" << endl;
+    cout << " was given: " << suppliedNumber << endl;
+    suppliedNumber = (suppliedNumber * 3 + 3242) / 42;
+    cout << "It is now: " << suppliedNumber << endl;
+}
+
+int Controller :: impactNumber()
+{
+    return 89234528;
+}
+
+void Controller:: usePointerToChange(int * pointer)
+{
+    *pointer = 2 * (1111);
 }

@@ -11,9 +11,11 @@
 
 class Controller
 {
+private:
+    void specialOutput(int suppliedNumber);
+    int impactNumber();
+    void usePointerToChange(int * somePointer);
 public:
     void start();
-private:
-    void specialOutput();
 };
 #endif /* Controller_h */
