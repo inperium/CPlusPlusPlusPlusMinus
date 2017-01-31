@@ -33,3 +33,10 @@ void Timer :: endTimer()
 long Timer :: getExecutionTimeInMicroseconds(){
     return executionTime;
 }
+
+void Timer :: displayTimerInformation()
+{
+    cout << "This took this long to execute " << executionTime << endl;
+    cout << "That is this many seconds" << executionTime/CLOCKS_PER_SEC << endl;
+    
+}
