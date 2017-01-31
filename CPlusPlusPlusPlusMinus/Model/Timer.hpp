@@ -19,7 +19,9 @@ public:
     Timer ();
     void startTimer();
     void endTimer();
-    
+    void resetTimer();
+    void displayTimerInformation();
+    long getExecutionTimeInMicroseconds();
 };
 
 #endif /* Timer_hpp */
