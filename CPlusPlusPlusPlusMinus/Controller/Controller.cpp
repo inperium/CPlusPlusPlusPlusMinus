@@ -7,12 +7,16 @@
 //
 
 #include <iostream>
+#include "../Model/Timer.hpp"
 #include "Controller.h"
 
 using namespace std;
 
 void Controller :: start()
 {
+    Timer theTime;
+    theTime.startTimer();
+    
     int suppliedNumber = 9;
     int * numberPointer = &suppliedNumber;
     
